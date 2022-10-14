@@ -1,9 +1,8 @@
 #!/usr/bin/python3
 # 0-square.py by Bennet Ukoh
-"""Describes a Square."""
+"""Defines a square """
 
 
 class Square:
-    """This is an empty class"""
+    """Does nothing"""
     pass
-
