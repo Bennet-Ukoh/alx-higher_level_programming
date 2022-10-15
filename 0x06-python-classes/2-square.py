@@ -2,6 +2,7 @@
 # 2-square.py by Bennet Ukoh
 """Defines a square"""
 
+
 class Square:
     """
     The class defines a square.
