@@ -3,6 +3,7 @@
 """Defines a square"""
 
 
+
 class Square:
     """
     The class defines a square.

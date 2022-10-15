@@ -16,10 +16,12 @@ class Square:
         """
         Constructs all the necessary attributes for the Square object.
 
-        param size: size of the Square.
+         Args:
+            size: represnets the size of the square defined
+        Raises:
+            TypeError: if size is not integer
+            ValueError: if size is less than zero.
 
-        raise  TypeError: size must be an integer.
-        raise  ValueError: size must be >= 0.
         """
         if not isinstance(size, int):
             raise TypeError("size must be an integer")
@@ -32,7 +34,7 @@ class Square:
         """
         Calculates the area of the square.
 
-        :return: The square of the value of size.
+        Returns: The square of the value of size.
         """
         return self.__size ** 2
 
