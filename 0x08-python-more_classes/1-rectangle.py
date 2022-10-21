@@ -5,11 +5,14 @@
 
 class Rectangle:
     """Defines a rectangle."""
+    
+
     def __init__(self, width=0, height=0):
         """Constructing the necessary attributes."""
 
         self.width = width
         self.height = height
+
 
     @property
     def width(self):
@@ -18,6 +21,7 @@ class Rectangle:
         :return: int
         """
         return self.__width
+
 
     @width.setter
     def width(self, value):
@@ -37,6 +41,7 @@ class Rectangle:
         if value < 0:
             raise ValueError("width must be >= 0")
 
+
     @property
     def height(self):
         """
@@ -44,6 +49,7 @@ class Rectangle:
         :return: int
         """
         return self.__height
+
 
     @height.setter
     def height(self, value):
@@ -62,4 +68,3 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-
