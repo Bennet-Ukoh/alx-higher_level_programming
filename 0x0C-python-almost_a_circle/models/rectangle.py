@@ -21,18 +21,41 @@ class Rectangle(Base):
 
     @width.setter
     def width(self, width):
-        """Sets the width of the rectangle"""
+        """
+        Sets the width of the rectangle.
+
+         Raises:
+              TypeError - if the width is not an integer.
+              ValueError - if the width is under 0 or equals 0
+
+        """
         self.__width = width
+        if not isinstance(width, int):
+            raise TypeError("width must be an integer")
+        if width <= 0:
+            raise ValueError("width must be >= 0")
 
     @property
     def height(self):
         """Retrieves the height of the rectangle"""
+
         return self.__height
 
     @height.setter
     def height(self, height):
-        """Sets the height of the rectangle"""
+        """
+        Sets the height of the rectangle.
+
+        Raises:
+              TypeError - if the height is not an integer.
+              ValueError - if the height is under 0 or equals 0
+        """
+
         self.__height = height
+        if not isinstance(height, int):
+            raise TypeError("height must be an integer")
+        if height <= 0:
+            raise ValueError("height must be >= 0")
 
     @property
     def x(self):
@@ -41,8 +64,19 @@ class Rectangle(Base):
 
     @x.setter
     def x(self, x):
-        """Sets the value x"""
+        """
+        Sets the value x.
+
+         Raises:
+              TypeError - if x is not an integer.
+              ValueError - if x is under 0 or equals 0
+
+        """
         self.__x = x
+        if not isinstance(x, int):
+            raise TypeError("x must be an integer")
+        if x <= 0:
+            raise ValueError("x must be >= 0")
 
     @property
     def y(self):
@@ -51,5 +85,16 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, y):
-        """Sets the value y"""
+        """Sets the value y.
+
+         Raises:
+              TypeError - if y is not an integer.
+              ValueError - if y is under 0 or equals 0
+
+        """
         self.__y = y
+        if not isinstance(y, int):
+            raise TypeError("y must be an integer")
+        if y <= 0:
+            raise ValueError("y must be >= 0")
+
